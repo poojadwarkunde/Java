@@ -5,13 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import practice.java.Initializer;
+
 
 public class GmailSignIn {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","E:\\owno\\for backup\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver","E:\\owno\\for backup\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		Initializer.initilize();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp");
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 //		driver.findElements(null).
 		//XPATH
 //		driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("Pooja");
